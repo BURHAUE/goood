@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title></title>
+    
+    </head>
+    <body dir="">
+        <h2 id="3">الأسم المعكوس</h2>
+        <input type="text" id="2" placeholder="إدخل هنا الأسم"><button type="submit" id="1">عكس</button>
+    </body>
+    <script>
+    function name(nat ="align"){
+        var name1=""
+        for(var i = nat.length;i >= 0;i--){
+            name1 += nat.charAt(i)
+        }
+        return name1
+    }
+    document.getElementById("1").addEventListener("click",function(){
+       var inp = document.getElementById("2").value
+       
+       //var u = 
+       document.getElementById("3").innerHTML = name(inp)
+    })
+    
+    </script>
+</html>
